@@ -8,7 +8,7 @@ const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
 const fs_1 = require("fs");
 const app = express_1.default();
-const PORT = parseInt(process.env.PORT + "", 10) || 3000;
+const PORT = parseInt(process.env.PORT + "", 10) || 5555;
 async function main() {
     // await prisma.user.create({
     //   data: { email: "deni@workattackangola.com", name: "Denilon" },

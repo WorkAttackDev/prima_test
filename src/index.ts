@@ -5,7 +5,7 @@ import { writeFileSync } from "fs";
 
 const app = express();
 
-const PORT = parseInt(process.env.PORT+"", 10) || 3000;
+const PORT = parseInt(process.env.PORT+"", 10) || 5555;
 
 async function main() {
   // await prisma.user.create({
