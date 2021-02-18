@@ -1,5 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
+import { writeFileSync } from "fs";
 
 async function main() {
   // await prisma.user.create({
@@ -13,6 +14,7 @@ async function main() {
   });
 
   console.log(users);
+  writeFileSync("text.txt", JSON.stringify(users));
 }
 
 main()
