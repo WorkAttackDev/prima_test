@@ -3,9 +3,9 @@ const prisma = new PrismaClient();
 import { writeFileSync } from "fs";
 
 async function main() {
-  // await prisma.user.create({
-  //   data: { email: "deni@workattackangola.com", name: "Denilson" },
-  // });
+  await prisma.user.create({
+    data: { email: "deni@workattackangola.com", name: "Denilon" },
+  });
 
   const users = await prisma.user.findMany({
     include: {
@@ -24,3 +24,6 @@ main()
   .finally(async () => {
     await prisma.$disconnect();
   });
+
+
+  // Denilson
